@@ -20,3 +20,11 @@ export async function PUT(req: NextRequest, res: NextResponse) {
     // update transaction
     return NextResponse.json({ message: `Hello ${body.name}` })
 }
+
+export async function DELETE(req: NextRequest, res: NextResponse) {
+    const body = await req.json();
+
+    // update transaction
+    return NextResponse.json({ message: `Hello ${body.name}` })
+}
+
