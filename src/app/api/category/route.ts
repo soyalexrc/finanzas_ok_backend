@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
                 user_id: user_id!
             }
         })
-        return NextResponse.json({ data })
+        return NextResponse.json(data)
 
     } catch (error) {
         return NextResponse.json({ error: JSON.stringify(error)});
